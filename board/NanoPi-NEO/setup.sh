@@ -20,7 +20,7 @@ allwinner_partition_image ( ) {
     disk_partition_mbr
     disk_fat_create 32m 16 1m
     # note: /usr/{local,ports} elsewhere - 2.5g for base
-    disk_ufs_create `expr 5 \* 512`m
+    disk_ufs_create `expr 7 \* 512`m
     # rest of disk - either use growfs on prior or add partitions if needed
     #disk_ufs_create ...
 }
